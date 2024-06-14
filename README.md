@@ -21,7 +21,7 @@ I started by securely storing the API key as an environment variable to ensure s
 Next, I defined the GPT-3.5 Turbo model and set up the API client to connect with OpenAI's servers.
 
 3. Defining the conversation:<br>
-I structured the AI’s responses to provide detailed and engaging information about the Olympics events, venues, and other key attractions in Paris.
+To define the conversation, I used requests and BeautifulSoup to scrape specific sections (event_schedule, transportation_tips, attractions, dining_recommendations) from the Timeout Paris page dedicated to the Paris 2024 Olympics.
 
 4. Creating a conversation loop:<br>
 I implemented a loop that allows continuous handling of user queries, offering real-time, personalized answers to help users plan their Olympic experience. I set the parameters for fine-tuning the behavior of the language model to generate text outputs that meet specific requirements, to ensure determinism (temperature=0.0) and limit the length of generated responses (max_tokens=100).
